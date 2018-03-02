@@ -1,5 +1,5 @@
 # FtpTiny
-A simple ftp server that runs in Micropython in a thread. 
+A simple ftp server that runs in Micropython in a thread. To use this with FileZilla, set it to PASV mode and maximum of 1 connection at a time.
 
 Modified from https://github.com/cpopp/MicroFTPServer/tree/master/uftp
 ## Installation
