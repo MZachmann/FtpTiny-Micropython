@@ -1,5 +1,6 @@
 # this code is from uftpserver (https://github.com/cpopp/MicroFTPServer/tree/master/uftp).
-# I packed it into a class and added the threading
+# there's no license so I used MIT and then...
+# packed it into a class, added missing FTP commands, and added the threading
 import socket
 import network
 import os
@@ -256,7 +257,6 @@ class FtpTiny:
         try:
             self.start_listen()
             while self.dorun:
-                cwd = "/"
                 cl, remote_addr = self.ftpsocket.accept()
                 cl.settimeout(300)
                 try:
